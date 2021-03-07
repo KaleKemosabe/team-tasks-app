@@ -34,7 +34,7 @@ const AddLogModal = ({ addLog }) => {
     return (
         <div id="add-log-modal" className="modal" style={modalStyle}>
             <div className="modal-content">
-                <h4>Enter system log</h4>
+                <h4>Create new task</h4>
                 <div className="row">
                     <div className="input-field">
                         <input 
@@ -56,7 +56,7 @@ const AddLogModal = ({ addLog }) => {
                             value={tech} 
                             className="browser-default"
                             onChange={e => setTech(e.target.value)}>
-                                <option value="" disabled>Select Technician</option>
+                                <option value="" disabled>Select Team member</option>
                                 <TechSelectOptions />
                         </select>
                     </div>
@@ -79,7 +79,7 @@ const AddLogModal = ({ addLog }) => {
                 </div>
             </div>
             <div className="modal-footer">
-                <a href="#!" onClick={onSubmit} className="modal-close waves-effect blue btn">Enter</a>
+                <a href="#!" onClick={onSubmit} className="modal-close waves-effect purple btn">Enter</a>
             </div>
         </div>
     )

@@ -17,7 +17,7 @@ const AddTechModal = ({ addTech }) => {
                 lastName
             });
 
-            M.toast({ html: `${firstName} ${lastName} was added as a tech` });
+            M.toast({ html: `${firstName} ${lastName} was added as a new team member` });
 
 // clear fields
             setFirstName('');
@@ -28,7 +28,7 @@ const AddTechModal = ({ addTech }) => {
     return (
         <div id="add-tech-modal" className="modal">
             <div className="modal-content">
-                <h4>New technician</h4>
+                <h4>New team member</h4>
                 <div className="row">
                     <div className="input-field">
                         <input 
@@ -59,7 +59,7 @@ const AddTechModal = ({ addTech }) => {
 
             </div>
             <div className="modal-footer">
-                <a href="#!" onClick={onSubmit} className="modal-close waves-effect blue btn">Enter</a>
+                <a href="#!" onClick={onSubmit} className="modal-close waves-effect purple btn">Enter</a>
             </div>
         </div>
     )

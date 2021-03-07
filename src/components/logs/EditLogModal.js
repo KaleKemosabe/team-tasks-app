@@ -42,7 +42,7 @@ const EditLogModal = ({ current, updateLog }) => {
     return (
         <div id="edit-log-modal" className="modal" style={modalStyle}>
             <div className="modal-content">
-                <h4>Enter system log</h4>
+                <h4>Create new task</h4>
                 <div className="row">
                     <div className="input-field">
                         <input 
@@ -83,7 +83,7 @@ const EditLogModal = ({ current, updateLog }) => {
                 </div>
             </div>
             <div className="modal-footer">
-                <a href="#!" onClick={onSubmit} className="modal-close waves-effect blue btn">Enter</a>
+                <a href="#!" onClick={onSubmit} className="modal-close waves-effect purple btn">Enter</a>
             </div>
         </div>
     )
