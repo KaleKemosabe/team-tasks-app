@@ -12,7 +12,8 @@ const AddLogModal = ({ addLog }) => {
 
     const onSubmit = () => {
         if (message === '' || tech === '') {
-            M.toast({ html: 'enter message yo' });
+// add modal message
+            M.toast({ html: 'Add something please' });
         } else {
             const newLog = {
                 message,
@@ -79,7 +80,7 @@ const AddLogModal = ({ addLog }) => {
                 </div>
             </div>
             <div className="modal-footer">
-                <a href="#!" onClick={onSubmit} className="modal-close waves-effect purple btn">Enter</a>
+                <a style={{ margin: '0 1.5rem 1.5rem 0' }} href="#!" onClick={onSubmit} className="modal-close waves-effect purple btn">Enter</a>
             </div>
         </div>
     )

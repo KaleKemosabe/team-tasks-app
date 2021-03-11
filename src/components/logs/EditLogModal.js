@@ -83,7 +83,7 @@ const EditLogModal = ({ current, updateLog }) => {
                 </div>
             </div>
             <div className="modal-footer">
-                <a href="#!" onClick={onSubmit} className="modal-close waves-effect purple btn">Enter</a>
+                <a style={{ marginRight: '1.5rem' }} href="#!" onClick={onSubmit} className="modal-close waves-effect purple btn">Enter</a>
             </div>
         </div>
     )

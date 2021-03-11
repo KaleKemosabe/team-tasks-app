@@ -59,7 +59,7 @@ const AddTechModal = ({ addTech }) => {
 
             </div>
             <div className="modal-footer">
-                <a href="#!" onClick={onSubmit} className="modal-close waves-effect purple btn">Enter</a>
+                <a style={{ margin: '0 1.5rem 1.5rem 0' }} href="#!" onClick={onSubmit} className="modal-close waves-effect purple btn">Enter</a>
             </div>
         </div>
     )
