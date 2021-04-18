@@ -6,6 +6,7 @@ import AddLogModal from './components/logs/AddLogModal';
 import EditLogModal from './components/logs/EditLogModal';
 import AddTechModal from './components/techs/AddTechModal';
 import TechListModal from './components/techs/TechListModal';
+import MoveAround from './components/reminder/draggable';
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -30,6 +31,7 @@ const App = () => {
           <TechListModal />
           <Logs />
         </div>
+        <MoveAround />
       </Fragment>
     </Provider>
   );
