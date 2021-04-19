@@ -15,7 +15,7 @@ class MoveAround extends Component {
         <div className="container">
           <Draggable disabled={disabled} >
             <div
-              style={{ width: "20rem", backgroundColor: "#e3f2fd", padding: "1rem", borderRadius: "5px" }}
+              style={{ width: "20rem", backgroundColor: "#e3f2fd", padding: "1rem", borderRadius: "5px", boxShadow: "0 0 .5px .5px lightgrey" }}
               className={!disabled ? "draggable" : null}
             >
               <h4 style={{ fontSize: "1.5rem", userSelect: "none" }}>
@@ -23,7 +23,9 @@ class MoveAround extends Component {
               </h4>
               <textarea disabled={!disabled} style={{ backgroundColor: "#ffffff", borderRadius: "2px" }} placeholder="Disable drag and write yourself a note here. You can move this around." />
               <button
+                className="purple modal-trigger"
                 onClick={this.toggleDraggable}
+                style={{ padding: ".5rem", border: "none", borderRadius:"2px", color: "#ffffff", cursor: "pointer" }}
               >
                 {disabled ? "Enable" : "Disable"} Drag
               </button>
